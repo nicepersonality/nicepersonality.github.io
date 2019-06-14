@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rubrik:300,400,400i,500&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500&display=swap&subset=latin-ext');
 
 /* reset */
 * {
@@ -11,9 +11,18 @@
 :root {
   --bg-color: #fff;
   --text-color: #333;
-  --text-subtle: #999;
+  --text-subtle: #777;
   --accent-color: #069;
-  --accent-subtle: #9cf;
+  --accent-subtle: #bde;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000;
+    --text-color: #ccc;
+    --text-subtle: #777;
+    --accent-color: #9cf;
+    --accent-subtle: #069;
+  }
 }
 
 /* Typography */
@@ -31,13 +40,14 @@ body {
   color: var(--text-color);
 }
 
-section {
+section, footer {
   margin-top: 1.5rem;
 }
 
 h1 {
+  position: relative;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 3rem;
 }
 h2 {
@@ -45,6 +55,7 @@ h2 {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
 }
 h3 {
   font-weight: 400;
@@ -52,14 +63,62 @@ h3 {
   margin-top: 1.5rem;
 }
 h4 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.5rem;
-}
-p {
   margin-top: 1.5rem;
 }
-div.legal-name {
+p, ul {
+  margin-top: 1.5rem;
+}
+.dates {
   color: var(--text-subtle);
   font-weight: 500;
   font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.name-disclaimer {
+  position: absolute;
+  left: -3rem;
+  box-shadow: none !important;
+}
+.legal-name {
+  color: var(--text-subtle);
+  font-size: 0.875rem;
+}
+a:link,
+a:visited {
+  color: var(--accent-color);
+  text-decoration: none;
+  box-shadow: 0 -2px 1px -1px inset var(--accent-subtle);
+}
+a:active,
+a:focus,
+a:hover {
+  background-color: var(--accent-subtle);
+  box-shadow: 0 -2px 1px -1px inset var(--accent-color);
+}
+
+header,
+section > p,
+section > div,
+section > ul {
+  padding-left: 3rem;
+}
+
+li {
+  margin-left: 1.5rem;
+}
+
+@media all and (max-width: 40rem) {
+  h1 {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  section > p,
+  section > div,
+  section > ul {
+    padding-left: 0;
+  }
 }
