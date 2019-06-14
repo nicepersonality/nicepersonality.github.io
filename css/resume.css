@@ -45,7 +45,6 @@ section, footer {
 }
 
 h1 {
-  position: relative;
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 3rem;
@@ -77,11 +76,6 @@ p, ul {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-.name-disclaimer {
-  position: absolute;
-  left: -3rem;
-  box-shadow: none !important;
-}
 .legal-name {
   color: var(--text-subtle);
   font-size: 0.875rem;
@@ -106,11 +100,35 @@ section > ul {
   padding-left: 3rem;
 }
 
+header {
+  position: relative;
+}
+.name-disclaimer {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: none !important;
+}
+.headshot {
+  display: block;
+  position: absolute;
+  top: .25rem;
+  right: 0;
+  margin: 0.25rem 0 0 1.5rem;
+  filter: grayscale(0.95);
+  transition: filter 0.15s ease-in-out;
+}
+.headshot:hover,
+.headshot:focus {
+  filter: grayscale(0);
+}
+
 li {
   margin-left: 1.5rem;
 }
 
-@media all and (max-width: 40rem) {
+@media all and (max-width: 42rem) {
   h1 {
     font-weight: 400;
     font-size: 2rem;
@@ -120,5 +138,21 @@ li {
   section > div,
   section > ul {
     padding-left: 0;
+  }
+  .headshot {
+    position: relative;
+    top: 0;
+    float: right;
+    height: 108px;
+    width: 108px;
+  }
+}
+@media all and (max-width: 30rem) {
+  .headshot {
+    position: relative;
+    float: none;
+    height: auto;
+    width: auto;
+    margin: 0;
   }
 }
