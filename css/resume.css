@@ -107,12 +107,17 @@ section > ul {
 header {
   position: relative;
 }
-.name-disclaimer {
+a.name-disclaimer {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
-  box-shadow: none !important;
+  text-decoration: none;
+}
+a.name-disclaimer:active,
+a.name-disclaimer:focus,
+a.name-disclaimer:hover {
+  background-color: var(--accent-subtle);
 }
 .headshot {
   display: block;
@@ -132,7 +137,7 @@ li {
   margin-left: 1.5rem;
 }
 
-@media all and (max-width: 42rem) {
+@media all and (max-width: 50em) {
   h1 {
     font-weight: 400;
     font-size: 2rem;
@@ -141,22 +146,42 @@ li {
   section > p,
   section > div,
   section > ul {
-    padding-left: 0;
+    padding-left: 1.5rem;
   }
   .headshot {
     position: relative;
     top: 0;
     float: right;
-    height: 108px;
-    width: 108px;
+    height: 6rem;
+    width: 9rem;
   }
 }
 @media all and (max-width: 30rem) {
+  section > p,
+  section > div,
+  section > ul {
+    padding-left: 0;
+  }
   .headshot {
     position: relative;
     float: none;
+    width: calc(100% - 3rem);
     height: auto;
-    width: auto;
-    margin: 0;
+    margin: 1.5rem 3rem 1.5rem 0;
+  }
+}
+@media all and (max-width: 24rem) {
+  header {
+    padding-left: 0;
+  }
+  h1 {
+    padding-left: 1.5rem;
+  }
+  .headshot {
+    position: relative;
+    float: none;
+    width: calc(100% - 1.5rem);
+    height: auto;
+    margin: 1.5rem 0;
   }
 }
