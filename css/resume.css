@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500&display=swap&subset=latin-ext');
+@import url('//lilith.bentley.soy/css/fonts/tofino-300.css');
+@import url('//lilith.bentley.soy/css/fonts/tofino-600.css');
 
 /* reset */
 * {
@@ -15,7 +16,7 @@
   --accent-color: #069;
   --accent-subtle: #bde;
 }
-@media (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) {
   :root {
     --bg-color: #000;
     --text-color: #ccc;
@@ -30,10 +31,11 @@ body {
   max-width: 60rem;
   margin: 0 auto;
   padding: 1.5rem;
-  font-family: 'Rubik', system-ui, sans-serif;
-  font-weight: 400;
+  font-family: 'Tofino', -apple-system, system-ui, sans-serif;
+  font-weight: 300;
   font-size: 1.25rem;
-  line-height: 1.5rem;
+  line-height: 1.625rem;
+  font-variant-numeric: lining-nums tabular-nums;
   background-color: white;
   background-color: var(--bg-color);
   color: black;
@@ -47,31 +49,32 @@ section, footer {
 h1 {
   font-weight: 300;
   font-size: 2.5rem;
-  line-height: 3rem;
+  line-height: 3.25rem;
 }
 h2 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.625rem;
 }
 h3 {
-  font-weight: 400;
-  font-size: 1.75rem;
-  margin-top: 1.5rem;
+  font-weight: 300;
+  font-size: 1.625rem;
+  margin-top: 1.625rem;
 }
 h4 {
-  font-weight: 500;
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
+  font-weight: 600;
+  font-size: 1.375rem;
+  margin-top: 1.625rem;
 }
 p, ul {
-  margin-top: 1.5rem;
+  margin-top: 1.625rem;
+  font-variant-numeric: oldstyle-nums proportional-nums;
 }
 .dates {
   color: var(--text-subtle);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -101,7 +104,7 @@ header,
 section > p,
 section > div,
 section > ul {
-  padding-left: 3rem;
+  padding-left: 3.25rem;
 }
 
 header {
@@ -119,42 +122,42 @@ a.name-disclaimer:focus,
 a.name-disclaimer:hover {
   background-color: var(--accent-subtle);
 }
-.headshot {
+/* .headshot {
   display: block;
   position: absolute;
   top: .25rem;
   right: 0;
-  margin: 0.25rem 0 0 1.5rem;
+  margin: 0.25rem 0 0 1.625rem;
   filter: grayscale(0.95);
   transition: filter 0.15s ease-in-out;
 }
 .headshot:hover,
 .headshot:focus {
   filter: grayscale(0);
-}
+} */
 
 li {
-  margin-left: 1.5rem;
+  margin-left: 1.625rem;
 }
 
 @media all and (max-width: 50em) {
   h1 {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2rem;
     line-height: 2rem;
   }
   section > p,
   section > div,
   section > ul {
-    padding-left: 1.5rem;
+    padding-left: 1.625rem;
   }
-  .headshot {
+  /* .headshot {
     position: relative;
     top: 0;
     float: right;
-    height: 6rem;
-    width: 9rem;
-  }
+    height: 6.5rem;
+    width: 9.75rem;
+  } */
 }
 @media all and (max-width: 30rem) {
   section > p,
@@ -162,26 +165,26 @@ li {
   section > ul {
     padding-left: 0;
   }
-  .headshot {
+  /* .headshot {
     position: relative;
     float: none;
-    width: calc(100% - 3rem);
+    width: calc(100% - 3.25rem);
     height: auto;
-    margin: 1.5rem 3rem 1.5rem 0;
-  }
+    margin: 1.625rem 3.25rem 1.625rem 0;
+  } */
 }
 @media all and (max-width: 24rem) {
   header {
     padding-left: 0;
   }
   h1 {
-    padding-left: 1.5rem;
+    padding-left: 1.625rem;
   }
-  .headshot {
+  /* .headshot {
     position: relative;
     float: none;
-    width: calc(100% - 1.5rem);
+    width: calc(100% - 1.625rem);
     height: auto;
-    margin: 1.5rem 0;
+    margin: 1.625rem 0; */
   }
 }
