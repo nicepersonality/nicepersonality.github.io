@@ -1,5 +1,4 @@
-@import url('//lilith.bentley.soy/css/fonts/tofino-300.css');
-@import url('//lilith.bentley.soy/css/fonts/tofino-600.css');
+@import url('fonts/tofino.css');
 
 /* reset */
 * {
