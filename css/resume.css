@@ -82,6 +82,10 @@ p, ul {
   color: var(--text-subtle);
   font-size: 0.875rem;
 }
+.small-caps {
+  font-variant: all-small-caps;
+}
+
 a:link,
 a:visited {
   color: var(--accent-color);
