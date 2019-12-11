@@ -96,11 +96,15 @@ a:visited {
   text-underline-offset: from-font;
   text-decoration-skip: skip;
   text-decoration-skip-ink: auto;
+  transition: text-decoration 1s;
 }
 a:active,
 a:focus,
 a:hover {
   text-decoration-color: var(--accent-color);
+  text-decoration-width: 3px;
+  text-decoration-thickness: 3px;
+  transition: text-decoration 0.2s;
 }
 
 header,
@@ -188,6 +192,6 @@ li {
     float: none;
     width: calc(100% - 1.625rem);
     height: auto;
-    margin: 1.625rem 0; */
-  }
+    margin: 1.625rem 0;
+  } */
 }
