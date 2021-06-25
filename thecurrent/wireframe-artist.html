@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      ARTIST wireframe &middot; The Current &middot; Great Music Lives Here
+    </title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,
+    %3csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3e
+    %3ctext y=%22.9em%22 font-size=%2290%22%3e📝%3c/text%3e
+    %3c/svg%3e"
+    />
+  </head>
+
+  <body
+    style="
+      font-family: 'Courier New', Courier, monospace;
+      --color-text: #333;
+      --color-background: white;
+      --color-invr: white;
+      --color-link: blue;
+      --color-link-active: blue;
+      --color-current-red-trans: #ccc;
+      --time-short: 9999s;
+      --time-medium: 9999s;
+      --time-long: 9999s;
+    "
+  >
+    <header style="border-bottom: 1px solid #ccc">
+      <div class="wrapper">
+        <h4>Site Header</h4>
+      </div>
+    </header>
+    <main id="main-content">
+      <div class="wrapper">
+        <h2 class="type-snug-down">Artist Name</h2>
+        <h3 class="type-snug-up">featured on The Current</h3>
+        <article
+          style="
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(3, 1fr);
+          "
+        >
+          <div style="grid-column: 1/2">
+            <img
+              src="https://via.placeholder.com/800x800?text=Artist+Image"
+              alt="Minnesota Public Radio"
+            />
+            <p class="type-caption type-snug-up" style="text-align: right">
+              Image caption + credit
+            </p>
+            <p>
+              Optional introductory paragraph. This would only exist if somebody
+              wrote one and attached it to the artist collection in the CMS, of
+              course.
+            </p>
+            <aside class="ad ad-square">
+              <h6 class="type-snug-down" style="color: #999">Sponsor</h6>
+              <div class="advertisement">
+                <img
+                  src="https://via.placeholder.com/300x250?text=300x250+AD"
+                  alt="Advertisement"
+                />
+              </div>
+            </aside>
+            <h4 style="padding-top: 1.5rem; border-top: 1px solid #ccc">
+              Upcoming Events
+            </h4>
+            <div class="events-teaser-list" id="events">
+              <dl>
+                <dt>
+                  <time class="type-mini" datetime="2021-05-25">12/31</time>
+                </dt>
+                <dd>
+                  <a href="#" class="event-preview-image">
+                    <img
+                      src="https://via.placeholder.com/160x160?text=Event+Image"
+                      alt="album art"
+                      width="160"
+                      height="160"
+                    />
+                  </a>
+                  <a href="/events/2021/05/25/7637/midwest-music-exchange"
+                    >Event Name, linked to details</a
+                  >
+                </dd>
+                <dt>
+                  <time class="type-mini" datetime="2021-05-25">12/31</time>
+                </dt>
+                <dd>
+                  <a href="#" class="event-preview-image">
+                    <img
+                      src="https://via.placeholder.com/160x160?text=Event+Image"
+                      alt="album art"
+                      width="160"
+                      height="160"
+                    />
+                  </a>
+                  <a href="/events/2021/05/25/7637/midwest-music-exchange"
+                    >Event Name, linked to details</a
+                  >
+                </dd>
+                <dt>
+                  <time class="type-mini" datetime="2021-05-25">12/31</time>
+                </dt>
+                <dd>
+                  <a href="#" class="event-preview-image">
+                    <img
+                      src="https://via.placeholder.com/160x160?text=Event+Image"
+                      alt="album art"
+                      width="160"
+                      height="160"
+                    />
+                  </a>
+                  <a href="/events/2021/05/25/7637/midwest-music-exchange"
+                    >Event Name, linked to details</a
+                  >
+                </dd>
+              </dl>
+            </div>
+            <h4 style="padding-top: 1.5rem; border-top: 1px solid #ccc">
+              Live performances on The&nbsp;Current
+            </h4>
+            <ul>
+              <li>In-studio performance, December 31, 1999</li>
+              <li>In-studio performance, January 1, 2000</li>
+            </ul>
+            <aside class="ad ad-square" class="margin: 1.5rem auto;">
+              <h6 class="type-snug-down" style="color: #999">Sponsor</h6>
+              <div class="advertisement">
+                <img
+                  src="https://via.placeholder.com/300x250?text=300x250+AD"
+                  alt="Advertisement"
+                />
+              </div>
+            </aside>
+            <h4 style="padding-top: 1.5rem; border-top: 1px solid #ccc">
+              Songs in The&nbsp;Current’s catalog
+            </h4>
+            <h5 class="type-snug-down">Album Title</h5>
+            <ul class="type-snug-up">
+              <li><a href="#">Song Title</a></li>
+              <li><a href="#">Song Title</a></li>
+            </ul>
+            <h5 class="type-snug-down">Album Title</h5>
+            <ul class="type-snug-up">
+              <li><a href="#">Song Title</a></li>
+              <li><a href="#">Song Title</a></li>
+              <li><a href="#">Song Title</a></li>
+              <li><a href="#">Song Title</a></li>
+            </ul>
+            <h5 class="type-snug-down">Album Title</h5>
+            <ul class="type-snug-up">
+              <li><a href="#">Song Title</a></li>
+              <li><a href="#">Song Title</a></li>
+            </ul>
+            <h5 class="type-snug-down">Album Title</h5>
+            <ul class="type-snug-up">
+              <li><a href="#">Song Title</a></li>
+              <li><a href="#">Song Title</a></li>
+              <li><a href="#">Song Title</a></li>
+              <li><a href="#">Song Title</a></li>
+            </ul>
+            <p class="type-caption">
+              Please note that our catalog only lists songs that we've set up
+              within our system; not every track from an album is displayed. You
+              may request a song that's not in our catalog by using our
+              <a href="/request">request form</a>.
+            </p>
+          </div>
+          <div style="grid-column: 2/4">
+            <h3 class="type-snug-up">News and Features</h3>
+            <div class="stories-teaser-list">
+              <article class="teaser-story">
+                <h4 class="teaser-title">
+                  <a href="#">Story Title</a>
+                </h4>
+                <div class="teaser-image">
+                  <a href="#">
+                    <img
+                      src="https://via.placeholder.com/640x360?text=Teaser+Image"
+                      alt="album art"
+                      width="640"
+                      height="360"
+                    />
+                  </a>
+                </div>
+                <div class="teaser-date type-micro">December 31, 1999</div>
+                <div class="teaser-blurb">
+                  This is a teaser for reading material. It could be a news
+                  story, it could be a blog post, or it could be a playlist.
+                  <a href="#" class="link-readmore type-micro">Read more</a>
+                </div>
+              </article>
+              <article class="teaser-story">
+                <h4 class="teaser-title">
+                  <a href="#">Story Title</a>
+                </h4>
+                <div class="teaser-image">
+                  <a href="#">
+                    <img
+                      src="https://via.placeholder.com/640x360?text=Teaser+Image"
+                      alt="album art"
+                      width="640"
+                      height="360"
+                    />
+                  </a>
+                </div>
+                <div class="teaser-date type-micro">December 31, 1999</div>
+                <div class="teaser-blurb">
+                  This is a teaser for reading material. It could be a news
+                  story, it could be a blog post, or it could be a playlist.
+                  <a href="#" class="link-readmore type-micro">Read more</a>
+                </div>
+              </article>
+              <article class="teaser-story">
+                <h4 class="teaser-title">
+                  <a href="#">Story Title</a>
+                </h4>
+                <div class="teaser-image">
+                  <a href="#">
+                    <img
+                      src="https://via.placeholder.com/640x360?text=Teaser+Image"
+                      alt="album art"
+                      width="640"
+                      height="360"
+                    />
+                  </a>
+                </div>
+                <div class="teaser-date type-micro">December 31, 1999</div>
+                <div class="teaser-blurb">
+                  This is a teaser for reading material. It could be a news
+                  story, it could be a blog post, or it could be a playlist.
+                  <a href="#" class="link-readmore type-micro">Read more</a>
+                </div>
+              </article>
+            </div>
+            <h3 style="padding-top: 1.5rem; border-top: 1px solid #ccc">
+              Artist Videos
+            </h3>
+            <div>
+              <h4>Video title</h4>
+              <img
+                src="https://via.placeholder.com/1600x900?text=YouTube+video+embed"
+                alt="Minnesota Public Radio"
+              />
+              <p class="type-caption type-snug-up" style="text-align: right">
+                Video caption
+              </p>
+            </div>
+            <div>
+              <h4>Video title</h4>
+              <img
+                src="https://via.placeholder.com/1600x900?text=YouTube+video+embed"
+                alt="Minnesota Public Radio"
+              />
+              <p class="type-caption type-snug-up" style="text-align: right">
+                Video caption
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer
+      style="color: #333; background-color: white; border-top: 1px solid #ccc"
+    >
+      <div class="wrapper">
+        <h5>Site Footer</h5>
+      </div>
+    </footer>
+    <aside class="audio-player" style="border-top: 1px solid #ccc">
+      <div class="wrapper" style="padding: 1.5rem 0">Audio Player</div>
+    </aside>
+  </body>
+</html>

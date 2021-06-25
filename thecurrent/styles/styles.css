@@ -1,0 +1,38 @@
+/* Use UTF-8 encoding for all generated content */
+@charset "utf-8";
+
+/* Import variables and CSS custom properties */
+@import 'vars/type.css';
+@import 'vars/color.css';
+@import 'vars/time.css';
+
+/* Import base styles */
+@import 'base/sanitize.css';
+@import 'base/layout.css';
+@import 'base/typography.css';
+
+@import 'base/countdown.css';
+@import 'base/features.css';
+@import 'base/header.css';
+@import 'base/hero.css';
+@import 'base/tiles.css';
+@import 'base/stream-cards.css';
+@import 'base/teasers.css';
+@import 'base/form.css';
+
+/* (below this line are unmodified styles from YC) */
+/*
+@import 'base/container.css';
+@import 'base/collectionlist.css';
+@import 'base/figure.css';
+@import 'base/player.css';
+@import 'base/tabs.css';
+@import 'base/tilegrid.css';
+@import 'base/userContent.css';
+@import 'base/slideshow.css';
+@import 'base/profile.css';
+@import 'base/membership.css';
+@import 'base/mcpostman.css';
+@import 'base/search.css';
+@import 'modules/miniComponents/ShareButtons.module.css';
+*/

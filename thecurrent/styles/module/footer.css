@@ -1,0 +1,88 @@
+footer {
+  color: white;
+  background-color: var(--color-current-red);
+}
+
+footer > .wrapper {
+  display: grid;
+  gap: 1.5rem;
+  grid-template:
+    "logo logo" auto
+    "name name" auto
+    "ul-a ul-b" auto
+    "copy copy" auto
+    / 1fr 1fr;
+}
+
+.footer-logo {
+  grid-area: logo;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+.footer-logo img {
+  max-height: 5rem;
+  width: auto;
+}
+
+.footer-station-id {
+  grid-area: name;
+}
+
+.footer-stationinfo-a {
+  grid-area: ul-a;
+}
+
+.footer-stationinfo-b {
+  grid-area: ul-b;
+}
+
+.footer-copyright {
+  grid-area: copy;
+}
+
+footer ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  display: block;
+  list-style: none;
+  line-height: 1.125;
+  margin: 0 0 0.625rem;
+  padding: 0;
+  break-inside: avoid;
+}
+
+footer a {
+  color: white;
+}
+footer a:active,
+footer a:focus,
+footer a:hover {
+  color: white;
+  text-decoration-color: white;
+}
+
+@media screen and (min-width: 50em) {
+  footer > .wrapper {
+    grid-template:
+      "logo ul-a ul-b" auto
+      "name ul-a ul-b" auto
+      "name copy copy" auto
+      / 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  footer > .wrapper {
+    grid-template:
+      "logo logo ul-a ul-b" auto
+      "name name ul-a ul-b" auto
+      "copy copy copy copy" auto
+      / 1fr 1fr 1fr 1fr;
+  }
+}
