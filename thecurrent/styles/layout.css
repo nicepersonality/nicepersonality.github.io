@@ -81,22 +81,23 @@ aside.audio-player {
   border-top: 2px solid var(--color-current-red);
 }
 
-/* scrolling */
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 7.5rem;
-}
-
-body {
-  /* should be html but Chrome has a bug */
-  scroll-padding-top: 7.5rem;
-}
-
 /* additional defaults */
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* scale down rems on short screens */
+
+@media screen and (max-height: 800px) {
+  :root {
+    font-size: 2vh;
+  }
+}
+@media screen and (max-height: 640px) {
+  :root {
+    font-size: 80%;
+  }
 }

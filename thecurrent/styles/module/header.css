@@ -11,7 +11,6 @@ header.is-scrolled {
   box-shadow: 0 0 0.5rem var(--color-black-trans),
     0 -2px 0 var(--color-bkgd);
 }
-
 header > .wrapper {
   display: flex;
   flex-direction: row;
@@ -52,6 +51,24 @@ header .tagline {
     font-size: var(--type-size-huge);
   }
   header.is-scrolled .tagline {
+    font-size: var(--type-size-large);
+  }
+}
+
+/* keep top banner collapsed on shorter screens */
+@media screen and (max-height: 720px) {
+  header {
+    transition: none;
+    padding: 0.25rem 1rem 0.5rem;
+    box-shadow: 0 0 0.5rem var(--color-black-trans),
+      0 -2px 0 var(--color-bkgd);
+  }
+  header .logo {
+    transition: none;
+    width: 6rem;
+    transform: rotate(-15deg);
+  }
+  header .tagline {
     font-size: var(--type-size-large);
   }
 }

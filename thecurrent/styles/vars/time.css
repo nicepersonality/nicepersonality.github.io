@@ -1,3 +1,10 @@
+/* scrolling */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7.5rem;
+}
+
 /* Times used for animations */
 
 :root {
@@ -8,6 +15,9 @@
 
 /* disable animations */
 @media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: unset;
+  }
   :root {
     --time-short: 0.001ms;
     --time-medium: 0.001ms;
