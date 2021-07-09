@@ -1,6 +1,7 @@
 body {
   font-family: "Univers TC", system-ui, sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem; /* fallback */
+  font-size: var(--type-size-copy);
   line-height: 1.5rem;
 }
 
@@ -29,20 +30,21 @@ h3,
 }
 h4,
 .type-hefty {
-  font-size: 1rem; /* fallback */
+  font-size: 1.125rem; /* fallback */
   font-size: var(--type-size-hefty);
   font-weight: 700;
   line-height: 1.5rem;
 }
 h5,
 .type-strong {
-  font-size: 1rem;
+  font-size: 1.125rem; /* fallback */
+  font-size: var(--type-size-copy);
   font-weight: 700;
   line-height: 1.5rem;
 }
 h6,
 .type-caption {
-  font-size: 0.9375rem;
+  font-size: 1rem; /* fallback */
   font-size: var(--type-size-caption);
   line-height: 1.5rem;
 }
@@ -52,20 +54,24 @@ h6 {
   letter-spacing: 0.01rem;
 }
 .type-mini {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-size: var(--type-size-mini);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.02rem;
 }
 .type-micro {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-size: var(--type-size-micro);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.04rem;
+}
+
+section > h3:first-child {
+  font-style: italic;
 }
 
 h1,
@@ -107,14 +113,17 @@ a:hover {
   text-decoration-color: var(--color-link-active);
 }
 
-nav a {
+nav a,
+nav button {
   color: var(--color-text);
+  text-decoration: underline;
   text-decoration-color: transparent;
 }
 
 .link-readmore,
 .link-listen {
   display: inline-block;
+  font-style: italic;
 }
 
 .link-readmore::after {
