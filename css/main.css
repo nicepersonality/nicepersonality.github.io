@@ -1,0 +1,211 @@
+@import url('fonts/tofino.css');
+@import url('vars/radix-custom-palette.css');
+
+/* reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS variables */
+:root {
+  --bg-color: var(--color-background);
+  --text-color: var(--gray-12);
+  --text-subtle: var(--gray-11);
+  --accent-color: var(--teal-11);
+  --accent-subtle: var(--teal-8);
+  --accent-strong: var(--teal-12);
+}
+
+/* Typography */
+body {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: 'Tofino', system-ui, sans-serif;
+  font-weight: 333;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-variant-numeric: lining-nums tabular-nums;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+section, footer {
+  margin-top: 1.75rem;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 2.625rem;
+  line-height: 2.625rem;
+  font-stretch: 105%;
+}
+h2 {
+  font-weight: 600;
+  font-size: 1rem;
+  font-stretch: 110%;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.875rem;
+}
+h3 {
+  font-weight: 300;
+  font-size: 1.625rem;
+  margin-top: 0.875rem;
+}
+h4 {
+  font-weight: 500;
+  font-size: 1.375rem;
+  margin-top: 0.875rem;
+  font-stretch: 105%;
+}
+p, ul {
+  /* margin-top: 1.625rem; */
+}
+strong {
+  font-weight: 500;
+}
+em {
+  /* prevent Safari from double-fake-italicizing */
+  font-synthesis: none;
+}
+
+.organization + .organization {
+  margin-top: 1.75rem;
+}
+
+.dates {
+  color: var(--text-subtle);
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-stretch: 95%;
+}
+.birth-name {
+  color: var(--text-subtle);
+  font-size: 0.875rem;
+}
+.birth-name > span {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-stretch: 105%;
+}
+.small-caps {
+  /* font-variant: all-small-caps; */
+}
+
+a:link,
+a:visited {
+  color: var(--accent-color);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-subtle);
+  text-decoration-thickness: 1px;
+  text-underline-offset: from-font;
+  text-decoration-skip: skip;
+  text-decoration-skip-ink: auto;
+  transition: all .5s;
+}
+a:active,
+a:focus,
+a:hover {
+  color: var(--accent-strong);
+  text-decoration-color: var(--accent-color);
+  text-decoration-thickness: 2px;
+  /* text-underline-offset: 1px; */
+  transition: all 0.2s;
+}
+
+header,
+section > p,
+section > div,
+section > ul {
+  padding-left: 3.25rem;
+}
+
+header {
+  position: relative;
+}
+a.name-disclaimer {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+}
+a.name-disclaimer:active,
+a.name-disclaimer:focus,
+a.name-disclaimer:hover {
+  background-color: var(--accent-subtle);
+}
+/* .headshot {
+  display: block;
+  position: absolute;
+  top: .25rem;
+  right: 0;
+  margin: 0.25rem 0 0 1.625rem;
+  filter: grayscale(0.95);
+  transition: filter 0.15s ease-in-out;
+}
+.headshot:hover,
+.headshot:focus {
+  filter: grayscale(0);
+} */
+
+li {
+  margin-left: 1.625rem;
+}
+
+@media all and (max-width: 50em) {
+  h1 {
+    font-weight: 200;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  section > p,
+  section > div,
+  section > ul {
+    padding-left: 1.625rem;
+  }
+  /* .headshot {
+    position: relative;
+    top: 0;
+    float: right;
+    height: 6.5rem;
+    width: 9.75rem;
+  } */
+}
+@media all and (max-width: 30rem) {
+  section > p,
+  section > div,
+  section > ul {
+    padding-left: 0;
+  }
+  /* .headshot {
+    position: relative;
+    float: none;
+    width: calc(100% - 3.25rem);
+    height: auto;
+    margin: 1.625rem 3.25rem 1.625rem 0;
+  } */
+}
+@media all and (max-width: 24rem) {
+  header {
+    padding-left: 0;
+  }
+  h1 {
+    padding-left: 1.625rem;
+  }
+  /* .headshot {
+    position: relative;
+    float: none;
+    width: calc(100% - 1.625rem);
+    height: auto;
+    margin: 1.625rem 0;
+  } */
+}
